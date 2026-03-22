@@ -603,6 +603,35 @@ body {
 /* === modal === */
 
 .nav_about {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+}
+
+.nav_about li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+
+.nav_about li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(var(--d) 0 0) bottom /var(--t, -1px) 2px no-repeat;
+    transition: 1s;
+}
+
+.nav_about li a:hover {
+    --t: 100%;
+    color: var(--d);
+}
+
+
+/* .nav_about {
     border: 0;
     outline: none;
     background: none;
@@ -624,4 +653,4 @@ body {
 .nav_about:hover .hover_text {
     width: 100%;
     filter: drop-shadow(0 0 23px #00c3ff);
-}
+} */
