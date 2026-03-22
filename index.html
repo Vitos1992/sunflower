@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+    <!-- ============= header ======================== -->
+
     <header class="site-header">
         <div class="container header-inner">
             <a class="brand" href="#">
@@ -46,23 +49,35 @@
     </header>
 
     <main>
+
+        <!-- ======= hero =========== -->
+
         <section class="hero">
             <div class="container hero-inner">
                 <div class="hero-text">
-                    <h1 data-i18n="hero.heading">
-                        Тепла турбота і розвиток для кожної дитини
+                    <h1>
+                        Дитячий садочок дошкільної освіти "Сонечко"
                     </h1>
-                    <p data-i18n="hero.paragraph">
-                        Індивідуальні програми, безпечне середовище та активний режим дня
-                        – все для щасливого зростання дитини.
+                    <p>
+                        Це не звичайний дитячий садок. Це затишний міні сад з
+                        індивідуальною програмою, безпечним середовищем та активним режимом дня
+                        для щасливого зростання дитини.
+                        <br />
+                        Разом з креативною командою "Сонечко", дозвілля вашого чада стане барвистим!
                     </p>
-                    <a class="btn primary open-modal" href="#" data-i18n="hero.button">Записатися на екскурсію</a>
+
+                    <button class="btn open-modal">Подати заявку</button>
+
                 </div>
                 <div class="hero-illustration">
-                    <img src="./images/1.png" alt="Веселий хлопчик у жовтій сонячній шапці та сірому костюмі тримає олівець над головою. Навколо зображення позначені ключові елементи: Лісенцій дитячі центри, Підготовка до школи, Пів дня, Творчі студії, Дитячий садок. Фон світлий, ілюстрація має дружній та навчальний тон." data-i18n="alt.hero" data-i18n-target="alt" />
+                    <img src="./images/1.png"
+                        alt="Веселий хлопчик у жовтій сонячній шапці та сірому костюмі тримає олівець над головою. Навколо зображення позначені ключові елементи: Лісенцій дитячі центри, Підготовка до школи, Пів дня, Творчі студії, Дитячий садок. Фон світлий, ілюстрація має дружній та навчальний тон."
+                        data-i18n="alt.hero" data-i18n-target="alt" />
                 </div>
             </div>
         </section>
+
+        <!-- ===== about-start ============ -->
 
         <section class="about_start">
             <div class="about_container">
@@ -82,6 +97,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- ====== item ========= -->
 
         <section id="about" class="section container">
             <h2 data-i18n="about.heading">Про нас</h2>
@@ -119,6 +136,8 @@
             </div>
         </section>
 
+        <!-- ==== programs ===== -->
+
         <section id="programs" class="section alt">
             <div class="container">
                 <h2 data-i18n="programs.heading">Наші програми</h2>
@@ -144,6 +163,29 @@
                 </div>
             </div>
         </section>
+
+        <section class="container">
+            <div class="list_item">
+                <h2>Колектив "Сонечко"</h2>
+                <p>
+                    "Сонечко" - найкращий помічник батькам у вихованні та освіті улюбленого чада. Адже наш колектив –
+                    професійна команда талановитих педагогів, готова допомогти вашому малюку в освоєнні нових знань та
+                    вмінь, роблячи це з любов’ю, радістю та турботою.
+                </p>
+                <p>
+                    "Сонечко" — це дитячий садок та місце, яке стало рідним для багатьох хлопчаків та дівчаток. Простір,
+                    де в кожній дитині
+                    розкриваєтються її здібності та талант. Будинок, до якого хочеться повертатися щодня.
+                </p>
+            </div>
+
+            <div>
+                <img src="" alt="">
+            </div>
+
+        </section>
+
+        <!-- ====== teacher ===== -->
 
         <section id="team" class="section container">
             <h2 data-i18n="team.heading">Вихователі</h2>
@@ -172,6 +214,8 @@
             </div>
         </section>
 
+        <!-- =========== gallery ========= -->
+
         <section id="gallery" class="section alt">
             <div class="container">
                 <h2 data-i18n="gallery.heading">Галерея</h2>
@@ -190,30 +234,35 @@
             </div>
         </section>
 
+        <!-- ====== form ======== -->
+
         <section id="contact" class="section container">
             <h2 data-i18n="contact.heading">Контакти</h2>
             <div class="contact-grid">
                 <form id="contactForm" class="contact-form">
-                    <label data-i18n="contact.label.name">Ім'я
-                        <input type="text" name="name" required />
-                    </label>
-                    <label data-i18n="contact.label.contact">Телефон або email
-                        <input type="text" name="contact" required />
-                    </label>
-                    <label data-i18n="contact.label.message">Повідомлення
-                        <textarea name="message"></textarea>
-                    </label>
+                    <div>
+                        <label for="user_name" data-i18n="contact.label.name">Ім'я</label>
+                        <input class="input_form_name" type="text" name="name" id="user_name" required />
+                    </div>
+                    <div>
+                        <label for="user_phone" data-i18n="contact.label.contact">Телефон або email</label>
+                        <input class="input_form_name" type="text" name="contact" id="user_phone" required />
+                    </div>
+                    <div>
+                        <label for="user_comments" data-i18n="contact.label.message">Повідомлення</label>
+                        <textarea class="input_form_name" name="message" id="user_comments"></textarea>
+                    </div>
                     <button class="btn" type="submit" data-i18n="contact.button">
                         Відправити
                     </button>
                 </form>
                 <div class="contact-info">
                     <p>
-                        <strong data-i18n="contact.address">Адреса:</strong> с. Коблеве, 
+                        <strong data-i18n="contact.address">Адреса:</strong> с. Коблеве,
                         вул. Степова
                     </p>
                     <p>
-                        <strong data-i18n="contact.phone">Телефон:</strong> +38 093 00 11 222 
+                        <strong data-i18n="contact.phone">Телефон:</strong> +38 093 00 11 222
                     </p>
                     <p>
                         <strong data-i18n="contact.hours">Години роботи:</strong> Пн-Пт
@@ -224,15 +273,20 @@
         </section>
     </main>
 
+    <!-- ======= footer =========== -->
+
     <footer class="site-footer">
         <div class="container">
             <p data-i18n="footer.text">
                 © 2026 Дитячий садок «Сонечко». Усі права захищено.
             </p>
+
+            <h2 class="nav_about">ABOUT</h2>
+            <h2 class="hover_text">ABOUT</h2>
         </div>
     </footer>
 
-    <!-- modal popup for contact form -->
+    <!-- ======= modal form ========= -->
     <div id="modal" class="modal" aria-hidden="true">
         <div class="modal-content">
             <button id="closeModal" class="close" aria-label="Close">
@@ -240,15 +294,18 @@
             </button>
             <h2 data-i18n="contact.heading">Контакти</h2>
             <form id="modalForm" class="contact-form">
-                <label data-i18n="contact.label.name">Ім'я
-                    <input type="text" name="name" required />
-                </label>
-                <label data-i18n="contact.label.contact">Телефон або email
-                    <input type="text" name="contact" required />
-                </label>
-                <label data-i18n="contact.label.message">Повідомлення
+                <div>
+                    <label data-i18n="contact.label.name">Ім'я</label>
+                    <input class="modal_input" type="text" name="name" required />
+                </div>
+                <div>
+                    <label data-i18n="contact.label.contact">Телефон або email</label>
+                    <input class="modal_input" type="text" name="contact" required />
+                </div>
+                <div>
+                    <label data-i18n="contact.label.message">Повідомлення</label>
                     <textarea name="message"></textarea>
-                </label>
+                </div>
                 <button class="btn primary" type="submit" data-i18n="contact.button">
                     Відправити
                 </button>
