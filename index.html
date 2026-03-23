@@ -35,14 +35,35 @@
                 </svg>
                 <span class="logo-text" data-i18n="brand">Сонечко</span>
             </a>
-            <nav class="nav" id="nav">
-                <a href="#about" data-i18n="nav.about">Про нас</a>
-                <a href="#programs" data-i18n="nav.programs">Програми</a>
-                <a href="#team" data-i18n="nav.team">Вихователі</a>
-                <a href="#gallery" data-i18n="nav.gallery">Галерея</a>
-                <a href="#" class="cta open-modal" data-i18n="nav.contact">Записатися</a>
-                <span class="header-phone">+38 (050) 123-45-67</span>
+            <nav id="nav">
+                <ul class="nav">
+                    <li style="--d:#00ade1" class="list">
+                        <a href="#about" data-i18n="nav.about">Про нас</a>
+                    </li>
+                    <li style="--d:#00dc82" class="list">
+                        <a href="#programs" data-i18n="nav.programs">Програми</a>
+                    </li>
+                    <li style="--d:#ff6492" class="list">
+                        <a href="#team" data-i18n="nav.team">Вихователі</a>
+                    </li>
+                    <li style="--d:#003cff" class="list">
+                        <a href="#gallery" data-i18n="nav.gallery">Галерея</a>
+                    </li>
+
+                    <button>
+                        <a href="#" class="cta open-modal" data-i18n="nav.contact">Записатися</a>
+                    </button>
+                </ul>
             </nav>
+
+            <address>
+                <ul class="nav">
+                    <li class="list">
+                        <a class="header-phone" href="tel:+38 (050) 123-45-67">+38 (050) 123-45-67</a>
+                    </li>
+                </ul>
+            </address>
+
             <button id="langToggle" class="lang-toggle">English</button>
             <button id="navToggle" class="nav-toggle" aria-label="Меню">☰</button>
         </div>
@@ -164,8 +185,8 @@
             </div>
         </section>
 
-        <section class="container">
-            <div class="list_item">
+        <section class="box_sunflower">
+            <div class="list_item container">
                 <h2>Колектив "Сонечко"</h2>
                 <p>
                     "Сонечко" - найкращий помічник батькам у вихованні та освіті улюбленого чада. Адже наш колектив –
@@ -277,24 +298,27 @@
 
     <footer class="site-footer">
         <div class="container">
+            <a class="brand" href="#">
+                <!-- simple sun logo -->
+                <svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="14" fill="var(--accent)" />
+                    <!-- rays -->
+                    <g stroke="var(--accent)" stroke-width="4">
+                        <line x1="32" y1="2" x2="32" y2="14" />
+                        <line x1="32" y1="50" x2="32" y2="62" />
+                        <line x1="2" y1="32" x2="14" y2="32" />
+                        <line x1="50" y1="32" x2="62" y2="32" />
+                        <line x1="10" y1="10" x2="18" y2="18" />
+                        <line x1="46" y1="46" x2="54" y2="54" />
+                        <line x1="10" y1="54" x2="18" y2="46" />
+                        <line x1="46" y1="18" x2="54" y2="10" />
+                    </g>
+                </svg>
+                <span class="logo-text" data-i18n="brand">Сонечко</span>
+            </a>
             <p data-i18n="footer.text">
                 © 2026 Дитячий садок «Сонечко». Усі права захищено.
             </p>
-
-            <ul class="container nav_about">
-                <li style="--d:#00ade1">
-                    <a href="#">TEXT 1</a>
-                </li>
-                <li style="--d:#ff6492">
-                    <a href="#">TEXT 2</a>
-                </li>
-                <li style="--d:#ffdd1c">
-                    <a href="#">TEXT 3</a>
-                </li>
-                <li style="--d:#00dc82">
-                    <a href="#">TEXT 4</a>
-                </li>
-            </ul>
         </div>
     </footer>
 
@@ -346,3 +370,18 @@
 </body>
 
 </html>
+
+<!-- <ul class="container nav_about">
+                <li style="--d:#00ade1">
+                    <a href="#">TEXT 1</a>
+                </li>
+                <li style="--d:#ff6492">
+                    <a href="#">TEXT 2</a>
+                </li>
+                <li style="--d:#ffdd1c">
+                    <a href="#">TEXT 3</a>
+                </li>
+                <li style="--d:#00dc82">
+                    <a href="#">TEXT 4</a>
+                </li>
+            </ul> -->

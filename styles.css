@@ -18,6 +18,14 @@ h5 {
     color: var(--color-title);
 }
 
+.list {
+    display: block;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
 * {
     box-sizing: border-box
 }
@@ -79,12 +87,26 @@ body {
     align-items: center
 }
 
-.nav a {
+.nav li a {
     color: #111;
+    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
     padding: .35rem .5rem;
-    border-radius: 8px
+    border-radius: 8px;
+
+    background: linear-gradient(var(--d) 0 0) bottom /var(--t, -1px) 2px no-repeat;
+    transition: 1s;
 }
+
+.nav a:hover {
+    --t: 100%;
+    color: var(--d);
+}
+
+
+
+
 
 .nav a.cta {
     background: var(--accent);
@@ -250,6 +272,11 @@ body {
 }
 
 /* ======== programs ========= */
+
+.box_sunflower {
+    background-image: url(./images/intro.png);
+    background-size: auto 100%;
+}
 
 .grid {
     display: grid;
