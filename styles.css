@@ -108,11 +108,11 @@ body {
 
 
 
-.nav a.cta {
+/* .nav a.cta {
     background: var(--accent);
     color: #111;
     font-weight: 600
-}
+} */
 
 .lang-toggle {
     background: transparent;
@@ -296,6 +296,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
     margin-top: 1rem
+}
+
+.list_item {
+    max-width: 600px;
 }
 
 .teacher img {
